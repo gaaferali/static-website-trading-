@@ -1,15 +1,12 @@
 import { NavLink } from 'react-router-dom'
-import { Share2 as Linkedin, AtSign as Twitter, Mail, Phone } from 'lucide-react'
+import {
+  Share2 as Linkedin,
+  AtSign as Twitter,
+  Mail,
+  Phone,
+} from 'lucide-react'
+import { contactInfo, serviceOptions } from '../../data/contact'
 import { navigation as navigationItems } from '../../data/navigation'
-import { contactInfo } from '../../data/contact'
-
-const services = [
-  'Global Sourcing',
-  'Logistics & Freight',
-  'Supplier Onboarding',
-  'AI Trade Solutions',
-  'Wholesale Procurement',
-]
 
 export default function Footer() {
   const year = new Date().getFullYear()
@@ -23,8 +20,8 @@ export default function Footer() {
             <span>NORA TRADE</span>
           </div>
           <p className="footer-description">
-            Global sourcing, AI-led pricing, and high-performance logistics
-            for modern trade across 42 countries.
+            Global sourcing, AI-led pricing, and high-performance logistics for
+            modern trade across 42 countries.
           </p>
           <div className="footer-social">
             <a href="#" aria-label="LinkedIn" className="footer-social-link">
@@ -52,9 +49,11 @@ export default function Footer() {
         <div className="footer-col">
           <h4 className="footer-heading">Our Services</h4>
           <ul className="footer-links">
-            {services.map((service) => (
+            {serviceOptions.map((service) => (
               <li key={service}>
-                <span className="footer-link footer-link-static">{service}</span>
+                <span className="footer-link footer-link-static">
+                  {service}
+                </span>
               </li>
             ))}
           </ul>
@@ -89,9 +88,13 @@ export default function Footer() {
         <div className="container footer-bottom-inner">
           <p>© {year} NORA TRADE. All rights reserved.</p>
           <div className="footer-legal">
-            <a href="#" className="footer-legal-link">Privacy Policy</a>
+            <a href="#" className="footer-legal-link">
+              Privacy Policy
+            </a>
             <span className="footer-legal-sep">·</span>
-            <a href="#" className="footer-legal-link">Terms of Service</a>
+            <a href="#" className="footer-legal-link">
+              Terms of Service
+            </a>
           </div>
         </div>
       </div>

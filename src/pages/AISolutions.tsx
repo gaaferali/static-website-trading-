@@ -1,6 +1,54 @@
 import ServiceCards from '../components/services/ServiceCards'
 import { aiServices } from '../data/services'
 
-function AISolutions() { return <><section className="shared-hero"><div className="container shared-hero-grid"><div><span className="hero-eyebrow">AI SOLUTIONS</span><h1>Clarity for the decisions behind every shipment.</h1><p>Turn live market signals into sharper pricing, stronger supplier choices, and resilient trade plans.</p></div><div className="shared-hero-visual"><img src={aiServices[0].image} alt="AI-powered trade intelligence" /></div></div></section><section className="section text-page"><div className="container"><div className="section-heading"><div><span className="eyebrow">NORA INTELLIGENCE</span><h2>Human judgment, amplified by market intelligence.</h2></div></div><div className="ai-intro"><p>Our AI-led tools surface pricing patterns, supplier risk, and delivery signals across your trade network. Teams spend less time collecting information and more time acting on it.</p><div className="dark-panel"><strong>One operating view.</strong><p>Pricing, network health, and forecasting signals built around the way your team already works.</p></div></div><ServiceCards services={aiServices} /></div></section></> }
+function AISolutions() {
+  return (
+    <>
+      <section className="shared-hero">
+        <div className="container shared-hero-grid">
+          <div>
+            <span className="hero-eyebrow">AI SOLUTIONS</span>
+            <h1>Clarity for the decisions behind every shipment.</h1>
+            <p>
+              Turn live market signals into sharper pricing, stronger supplier
+              choices, and resilient trade plans.
+            </p>
+          </div>
+          <div className="shared-hero-visual">
+            <img
+              src={aiServices[0].image}
+              alt="AI-powered trade intelligence"
+            />
+          </div>
+        </div>
+      </section>
+      <section className="section text-page">
+        <div className="container">
+          <div className="section-heading">
+            <div>
+              <span className="eyebrow">NORA INTELLIGENCE</span>
+              <h2>Human judgment, amplified by market intelligence.</h2>
+            </div>
+          </div>
+          <div className="ai-intro">
+            <p>
+              Our AI-led tools surface pricing patterns, supplier risk, and
+              delivery signals across your trade network. Teams spend less time
+              collecting information and more time acting on it.
+            </p>
+            <div className="dark-panel">
+              <strong>One operating view.</strong>
+              <p>
+                Pricing, network health, and forecasting signals built around
+                the way your team already works.
+              </p>
+            </div>
+          </div>
+          <ServiceCards services={aiServices} />
+        </div>
+      </section>
+    </>
+  )
+}
 
 export default AISolutions

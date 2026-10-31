@@ -1,3 +1,40 @@
-function AboutUs() { return <><section className="page-intro"><div className="container"><span className="eyebrow">ABOUT NORA TRADE</span><h1>Trade infrastructure with a human point of view.</h1><p>We make global procurement feel precise, transparent, and built for the pace of modern business.</p></div></section><section className="section text-page"><div className="container content-grid"><div><span className="eyebrow">OUR APPROACH</span><h2>Relationships are the first piece of infrastructure.</h2><p>Nora Trade brings verified manufacturers, ambitious buying teams, and the intelligence between them into one connected marketplace. We operate across 42 countries with local expertise and a global standard for quality.</p></div><div className="dark-panel"><span className="eyebrow">SINCE 2014</span><h3>42 countries</h3><p>One trusted network for sourcing, pricing, compliance, and delivery.</p></div></div></section></> }
+function AboutUs() {
+  return (
+    <>
+      <section className="page-intro">
+        <div className="container">
+          <span className="eyebrow">ABOUT NORA TRADE</span>
+          <h1>Trade infrastructure with a human point of view.</h1>
+          <p>
+            We make global procurement feel precise, transparent, and built for
+            the pace of modern business.
+          </p>
+        </div>
+      </section>
+      <section className="section text-page">
+        <div className="container content-grid">
+          <div>
+            <span className="eyebrow">OUR APPROACH</span>
+            <h2>Relationships are the first piece of infrastructure.</h2>
+            <p>
+              Nora Trade brings verified manufacturers, ambitious buying teams,
+              and the intelligence between them into one connected marketplace.
+              We operate across 42 countries with local expertise and a global
+              standard for quality.
+            </p>
+          </div>
+          <div className="dark-panel">
+            <span className="eyebrow">SINCE 2014</span>
+            <h3>42 countries</h3>
+            <p>
+              One trusted network for sourcing, pricing, compliance, and
+              delivery.
+            </p>
+          </div>
+        </div>
+      </section>
+    </>
+  )
+}
 
 export default AboutUs
